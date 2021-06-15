@@ -7,6 +7,18 @@ import lombok.Setter;
 import javax.persistence.*;
 import java.util.Date;
 
+
+/**
+ * Pogo class use to store information about Score.
+ *
+ * It contains id which is automatically assigned by sequence. Field Score contain a string value with score.
+ * Field Name contain a string value with name. Field Age contain a int value with age. Field Score contain a int
+ * value with score. Field Date contain a string value with date.
+ *
+ * Class using a library Lombok to auto-generate all needed setters, getters and Constructor without arguments.
+ * Class using a JPA implemented by Hibernate as ORM to generate sql code and change java objects to inserts to database
+ *
+ */
 @Entity
 @Table
 @NoArgsConstructor

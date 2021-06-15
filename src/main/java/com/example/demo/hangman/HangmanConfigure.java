@@ -14,6 +14,11 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+/**
+ * Configuration class used to insert data to database
+ *
+ */
+
 @Configuration
 public class HangmanConfigure {
     @Bean

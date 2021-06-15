@@ -7,6 +7,17 @@ import lombok.Setter;
 
 import javax.persistence.*;
 
+
+/**
+ * Pogo class use to store information about Words.
+ *
+ * It contains id which is automatically assigned by sequence. Field Word contain a string value with word.
+ * Field category contain a string value with category.
+ *
+ * Class using a library Lombok to auto-generate all needed setters, getters and Constructor without arguments.
+ * Class using a JPA implemented by Hibernate as ORM to generate sql code and change java objects to inserts to database
+ *
+ */
 @Entity
 @Table
 @NoArgsConstructor
@@ -30,8 +41,4 @@ public class HangmanWord {
         this.category = category;
     }
 
-
-//    public String getWord(){
-//        return "xd";
-//    }
 }
