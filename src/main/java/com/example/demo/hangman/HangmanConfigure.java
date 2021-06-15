@@ -28,19 +28,19 @@ public class HangmanConfigure {
 //            HangmanWord hangmanWord2 = new HangmanWord("byk","zwierzę");
 //            hangmanRepository.save(hangmanWord2);
 
-            String linia;
-            List<String> slowa = new ArrayList<>();
-            FileReader fr = new FileReader("../slowa.txt");
-            BufferedReader bfr = new BufferedReader(fr);
-            while((linia = bfr.readLine())!=null){
-                String[] fields = linia.split(",");
-                for(int i=0; i<fields.length; i++){
-                    if(fields[i].trim().length()>0){
-                        hangmanRepository.save(new HangmanWord(fields[i].trim(),"wszystkie"));
-                    }
-
-                }
-            }
+//            String linia;
+//            List<String> slowa = new ArrayList<>();
+//            FileReader fr = new FileReader("../slowa.txt");
+//            BufferedReader bfr = new BufferedReader(fr);
+//            while((linia = bfr.readLine())!=null){
+//                String[] fields = linia.split(",");
+//                for(int i=0; i<fields.length; i++){
+//                    if(fields[i].trim().length()>0){
+//                        hangmanRepository.save(new HangmanWord(fields[i].trim(),"wszystkie"));
+//                    }
+//
+//                }
+//            }
 
         };
     }
